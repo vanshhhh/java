@@ -1,0 +1,38 @@
+package vansh;
+interface department
+{
+	void dname();
+}
+interface student
+{
+	void sname();
+}
+interface course
+{
+	void cname();
+}
+class ABC implements department,student,course
+{
+	public void dname()
+	{
+		System.out.println("ISE DEPARTMENT");
+	}
+	public void sname()
+	{
+		System.out.println("VANSH");
+	}
+	public void cname()
+	{
+		System.out.println("JAVA");
+	}
+}
+public class MultipleInheritance {
+	public static void main(String args[])
+	{
+		ABC obj = new ABC();
+		obj.dname();
+		obj.sname();
+		obj.cname();
+	}
+
+}

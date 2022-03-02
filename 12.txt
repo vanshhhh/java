@@ -1,0 +1,32 @@
+package vansh;
+import java.util.*;
+public class happyno {
+	public static void main(String args[])
+	{
+	System.out.println( "Happy Number\n" ) ;
+	Scanner obj= new Scanner (System. in) ; 
+	System.out.println ("Enter the number :");
+	int number=obj.nextInt() ;
+	int iterations = 0;
+	int sum=0;
+	while(sum!=1 && sum!=4)
+	{
+		iterations++;
+		sum=0;
+		while(number!=0)
+		{
+			int rem = number % 10;
+			sum = sum + rem * rem;
+			number = number / 10;
+		}
+		number = sum;
+		System.out.println(iterations+".  "+sum);
+	}
+		if(sum == 1)
+			System.out.println("Yes, It is a happy number\n" ) ; 
+	    else
+	    	System.out.println("No, Its not a happy number\n" ) ;
+		
+	}
+	
+}

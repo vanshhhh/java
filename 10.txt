@@ -1,0 +1,29 @@
+package vansh;
+import java.util.Scanner;
+public class pyramid
+{
+  public static void main(String args[])
+  {
+  Scanner obj = new Scanner(System.in);
+  System.out.print("Enter Level : ");
+  int N = obj.nextInt();
+  int i,j,k,l=1;
+  for(i=0;i<N;i++)
+  {
+    for(j=0;j<N;j++)
+    {
+      if(i>N-j-1)
+        System.out.print(l--);
+      else
+        System.out.print(" ");
+    }  for(k=j;k<=2*N;k++)
+      {
+        if(k<=i+N)
+          System.out.print(l++);
+        else
+          System.out.print(" ");
+      }
+    
+    System.out.println("");
+  }
+}}

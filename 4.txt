@@ -1,0 +1,52 @@
+package vansh;
+import java.util.Scanner;
+public class calci {
+	public static void main(String args[])
+	{
+		System.out.println("SIMPLE CALCI\n");
+		Scanner obj = new Scanner(System.in);
+		int m,n;
+		while(true)
+		{
+			System.out.println("ENTER CHOICE:\n 1.ADDITION \n 2.DIFF\n 3.MUL\n 4. DIV\n 5.EXIT\n");
+			char ch = obj.next().charAt(0);
+			switch(ch)
+			{
+			case '1':
+			System.out.println("Enter two operands\n");
+			m= obj.nextInt();
+			n=obj.nextInt();
+			System.out.println("ADD IS:"+(m+n));
+			break;
+			case '2':
+				System.out.println("ENTER TWO OPERANDS\n");
+				m=obj.nextInt();
+				n=obj.nextInt();
+				System.out.println("DIFF IS:"+(m-n));
+				break;
+			case '3':
+				System.out.println("ENTER TWO OPERANDS\n");
+				m=obj.nextInt();
+				n=obj.nextInt();
+				System.out.println("PRODUCT IS:"+(m*n));
+				break;
+			case '4':
+				System.out.println("ENTER TWO OPERANDS\n");
+				m=obj.nextInt();
+				n=obj.nextInt();
+				System.out.println("DIV IS:"+(m/n));
+				break;
+			case '5':
+				System.out.println("EXITED\n");
+				System.exit(0);
+		
+				break;
+				default:System.out.println("WRONG INPUT\n");
+				break;
+			
+			
+			}
+		}
+	}
+
+}

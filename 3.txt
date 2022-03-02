@@ -1,0 +1,15 @@
+package vansh;
+import java.util.*;
+public class squaremat
+{
+	public static void main(String args[])
+	{
+		Scanner obj= new Scanner(System.in);
+		System.out.println("Enter value of n");
+		int n = obj.nextInt();
+		int total = 0;
+		for(int i=1;i<=n;i++)
+			total = total + i*i;
+		System.out.println("TOTAL NO OF SQUARE MATRICES "+total);
+	}
+}

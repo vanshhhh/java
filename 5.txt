@@ -1,0 +1,36 @@
+package vansh;
+class Node
+{
+	int data;
+	Node left,right;
+	Node(int data)
+	{
+		this.data=data;
+		this.left=null;
+		this.right=null;
+	}
+}
+public class BinaryTree {
+	public static Node gettree()
+	{
+		Node root=new Node(20);
+		root.left=new Node(40);
+		root.right=new Node(60);
+		root.left.left=new Node(10);
+		root.left.right=new Node(20);
+		return root;
+	}
+	public static int difference(Node root)
+	{
+		if(root==null)
+			return 0;
+		
+		return root.data - difference(root.left) - difference(root.right);
+	}
+	public static void main(String args[])
+	{
+		Node root=gettree();
+		int dif = difference(root);
+		System.out.println("Difference is "+dif);
+	}
+}

@@ -1,0 +1,27 @@
+package vansh;
+import java.util.Scanner;
+import java.util.Arrays;
+public class lexi {
+	public static void main(String args[])
+	{
+		Scanner obj = new Scanner(System.in);
+		String[] ls = new String[5];
+		System.out.println("ENTER 5 STRINGS\n");
+		System.out.print("FIRST:");
+		ls[0]= obj.next();
+		System.out.println("SECOND:");
+		ls[1]=obj.next();
+		System.out.println("THIRD:");
+		ls[2]=obj.next();
+		System.out.println("FOURTH:");
+		ls[3]=obj.next();
+		System.out.println("FIFTH:");
+		ls[4]=obj.next();
+		Arrays.sort(ls);
+		for(int i=0;i<5;i++)
+		{
+			System.out.println(ls[i]);
+		}
+	}
+
+}

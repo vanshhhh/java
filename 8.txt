@@ -1,0 +1,30 @@
+package vansh;
+import java.util.Scanner;
+public class methodover {
+	public static void main(String args[])
+	{
+		Scanner obj = new Scanner(System.in);
+		System.out.println("METHOD OVERLOADING");
+		int length,breadth,radius;
+		System.out.println("Enter Length and breadth for rectangle : ");
+		length= obj.nextInt();
+		breadth= obj.nextInt();
+		System.out.println("Enter radius for a circle : ");
+		radius= obj.nextInt();
+		methodover x = new methodover();
+		x.area(length,breadth);
+		x.area(radius);
+	}
+	void area (int l,int b)
+	{
+		int area = l*b;
+		System.out.println("Area of rectangle is "+area);
+	}
+	void area(int r)
+	{
+		double area = 3.14*r*r;
+		System.out.println("Area of rectangle is "+area);
+	}
+		
+	}
+
